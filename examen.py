@@ -8,16 +8,20 @@ from tkinter import *
 # esta es la función que ejecuta las operaciones del primer botón
 def operacion1():
     if int(Vartexto1.get()) < int(Vartexto3.get()):
-        VarResultado.set("El resultado de la multiplicación es = " + str(int(Vartexto1.get()) * int(Vartexto2.get()) * int(Vartexto3.get()))    
+        VarResultado.set("El resultado de la multiplicación es = " + str(int(Vartexto1.get()) * int(Vartexto2.get()) * int(Vartexto3.get())))    
     else:    
         if int(Vartexto1.get()) == int(Vartexto3.get()):
-            VarResultado.set("El resultado de la suma es = " + str(int(Vartexto1.get()) + int(Vartexto2.get()) + int(Vartexto3.get()))
+            VarResultado.set("El resultado de la suma es = " + str(int(Vartexto1.get()) + int(Vartexto2.get()) + int(Vartexto3.get())))
         else:    
             if int(Vartexto2.get()) == 0:
                 if int(Vartexto1.get()) > int(Vartexto3.get()):
-                    VarResultado.set("El resultado de la resta es = " + str(int(Vartexto1.get()) - int(Vartexto3.get()))
+                    VarResultado.set("El resultado de la resta es = " + str(int(Vartexto1.get()) - int(Vartexto3.get())))
                 else:
-                    VarResultado.set("El resultado de la resta es = " + str(int(Vartexto3.get()) - int(Vartexto1.get()))
+                    VarResultado.set("El resultado de la resta es = " + str(int(Vartexto3.get()) - int(Vartexto1.get())))
+
+# esta es la función que ejecuta las operaciones del primer botón
+def operacion2():
+    VarResultado.set("el texto concatenado es = " + str((Vartexto1.get()) + (Vartexto2.get()) + (Vartexto3.get())))
 
 #para crear la ventana
 Devin = Tk()
@@ -51,7 +55,7 @@ cuadro3 = Entry(Alexander, textvariable= Vartexto3).grid(row = 3, column = 1, pa
 Boton = Button(Alexander, text = "Botón 1", command = operacion1).grid(row = 4, columnspan = 2, pady = 10)
 
 #para crear el segundo botón de opciones
-Boton2 = Button(Alexander, text = "Botón 2").grid(row = 5, columnspan = 2, pady = 10)
+Boton2 = Button(Alexander, text = "Botón 2", command = operacion2).grid(row = 5, columnspan = 2, pady = 10)
 
 #para crear la pestaña en donde va a aparecer el resultado
 VarResultado = StringVar()
