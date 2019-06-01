@@ -47,10 +47,10 @@ texto3 =Label(Alexander, text = 'Tercer numero: ').grid(row = 3, column = 0)
 Vartexto3 = StringVar()
 cuadro3 = Entry(Alexander, textvariable= Vartexto3).grid(row = 3, column = 1, padx = 50, pady = 20)
 
-#para crear el primer botón de multiplicación
+#para crear el primer botón de opciones
 Boton = Button(Alexander, text = "Botón 1", command = operacion1).grid(row = 4, columnspan = 2, pady = 10)
 
-#para crear el botón
+#para crear el segundo botón de opciones
 Boton2 = Button(Alexander, text = "Botón 2").grid(row = 5, columnspan = 2, pady = 10)
 
 #para crear la pestaña en donde va a aparecer el resultado
