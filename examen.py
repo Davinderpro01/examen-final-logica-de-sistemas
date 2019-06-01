@@ -20,7 +20,7 @@ def operacion1():
                 else:
                     VarResultado.set("El resultado de la resta es = " + str(int(Var3.get()) - int(Var1.get())))
 
-# esta es la función que ejecuta las operaciones del primer botón
+# esta es la función que ejecuta las operaciones del segundo botón
 def operacion2():
     Valor_1 = int(Var1.get())
     Valor_2 = int(Var2.get())
