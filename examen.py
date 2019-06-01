@@ -51,7 +51,7 @@ cuadro3 = Entry(Alexander, textvariable= Vartexto3).grid(row = 3, column = 1, pa
 Boton = Button(Alexander, text = "Botón 1", command = operacion1).grid(row = 4, columnspan = 2, pady = 10)
 
 #para crear el botón
-Boton = Button(Alexander, text = "Botón 2").grid(row = 5, columnspan = 2, pady = 10)
+Boton2 = Button(Alexander, text = "Botón 2").grid(row = 5, columnspan = 2, pady = 10)
 
 #para crear la pestaña en donde va a aparecer el resultado
 VarResultado = StringVar()
