@@ -35,30 +35,30 @@ def operacion2():
     
     VarResultado.set(Devinimpresion) 
 
-#para crear la ventana
+#para crear ventana inicial
 Devin = Tk()
 
-#para darle título a la ventana
+#para darle título a la ventana inicial
 Devin.title("Devin Solórzano")
 
-#para dale tamaño a la ventana
+#para dale tamaño a la ventana inicial
 Devin.geometry("400x320")
 
-#Darle diseño al frame
+#crear frame y ponerle nombre
 Alexander = LabelFrame(Devin, text = "operaciones")
 Alexander.pack()
 
-#input1
+#primer input de ingreso
 mensaje1 = Label(Alexander, text = 'Primer numero: ').grid(row = 1, column = 0)
 Var1 = StringVar()
 ingreso1 = Entry(Alexander, textvariable= Var1).grid(row = 1, column = 1, padx = 50, pady = 20)
 
-# input2
+#segundo input de ingreso
 mensaje2 =Label(Alexander, text = 'Segundo numero: ').grid(row = 2, column = 0)
 Var2 = StringVar()
 ingreso2 = Entry(Alexander, textvariable= Var2).grid(row = 2, column = 1, padx = 50, pady = 10)
 
-# input3
+#tercer input de ingreso
 mensaje3 =Label(Alexander, text = 'Tercer numero: ').grid(row = 3, column = 0)
 Var3 = StringVar()
 ingreso4 = Entry(Alexander, textvariable= Var3).grid(row = 3, column = 1, padx = 50, pady = 20)
@@ -69,9 +69,9 @@ Botoncito = Button(Alexander, text = "Botón 1", command = operacion1).grid(row 
 #para crear el segundo botón de opciones
 Botoncito2 = Button(Alexander, text = "Botón 2", command = operacion2).grid(row = 5, columnspan = 2, pady = 10)
 
-#para crear la pestaña en donde va a aparecer el resultado
+#para crear el cuadro donde imprime el resultado
 VarResultado = StringVar()
 cuadro = Entry(Alexander, textvariable=VarResultado, justify = "center").grid(row = 6, columnspan = 2, pady = 10, sticky = W + E)
 
-#para crear oficialmente la ventana
+#para crear oficialmente la ventana inicial
 Devin.mainloop()
